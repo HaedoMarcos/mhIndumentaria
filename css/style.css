@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+.logouno {
+  width: 90px;
+}
+header {
+  background-color: rgb(60, 225, 137);
+  padding: 20px;
+}
+header nav ul {
+  width: 100%;
+}
+.navbar {
+  align-items: center;
+  display: flex;
+}
+header nav ul li {
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+}
+header nav ul li a {
+  text-decoration: solid;
+  color: darkblue;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+main {
+  background-color: rgb(179, 230, 203);
+  padding: 20px;
+  height: 78vh;
+}
+h1 {
+  margin: 0px 0;
+  text-align: center;
+  color: darkblue;
+  font-weight: bolder;
+}
+hr {
+  color: rgb(225, 60, 143);
+}
+section {
+  margin-top: 0;
+  margin: 0px;
+}
+.suela {
+  height: 400px;
+}
+.fotos {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  animation: fadeIn 5s;
+}
+.adidas {
+  width: 250px;
+  height: 250px;
+  animation: fadeIn 5s;
+}
+.conjuntinho {
+  animation: fadeIn 5s;
+}
+footer {
+  background-color: rgb(60, 225, 137);
+}
+h2 {
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: justify;
+  color: darkblue;
+  text-align: center;
+}
+.grid-area {
+  display: grid;
+  grid-template-columns: 4fr 12fr 12fr 12fr;
+  grid-template-rows: 10vh 35vh 20vh 15vh;
+  grid-template-areas:
+    "h1 h1 h1 h1"
+    "uno dos tres cuatro"
+    "uno . . cuatro"
+    "h2 h2 h2 h2";
+}
+h1 {
+  background-color: rgb(179, 230, 203);
+  grid-area: h1;
+}
+section#h2 {
+  background-color: rgb(179, 230, 203);
+  grid-area: h2;
+}
+div#uno {
+  background-color: rgb(179, 230, 203);
+  grid-area: uno;
+}
+div#dos {
+  background-color: rgb(179, 230, 203);
+  grid-area: dos;
+  display: center;
+}
+div#tres {
+  background-color: rgb(179, 230, 203);
+  grid-area: tres;
+  animation: fadeIn 5s;
+}
+div#cuatro {
+  background-color: rgb(179, 230, 203);
+  grid-area: cuatro;
+  animation: fadeIn 5s;
+}
+.pagos {
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.titulo {
+  color: blue;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    font-family: "Roboto Condensed", sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  .logouno {
+    width: 90px;
+  }
+  header {
+    background-color: rgb(60, 225, 137);
+    padding: 20px;
+  }
+  header nav ul {
+    width: 100%;
+  }
+  .navbar {
+    align-items: center;
+    display: flex;
+  }
+  header nav ul li {
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+  }
+  header nav ul li a {
+    text-decoration: solid;
+    color: darkblue;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  main {
+    background-color: rgb(179, 230, 203);
+    padding: 20px;
+    height: 78vh;
+  }
+  h1 {
+    margin: 0px 0;
+    text-align: center;
+    color: darkblue;
+    font-weight: bolder;
+  }
+  hr {
+    color: rgb(225, 60, 143);
+  }
+  section {
+    margin-top: 0;
+    margin: 0px;
+  }
+  .suela {
+    height: 400px;
+  }
+  .fotos {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .adidas {
+    width: 100%;
+    height: 250px;
+  }
+  footer {
+    background-color: rgb(60, 225, 137);
+  }
+  h2 {
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: justify;
+    color: darkblue;
+    text-align: center;
+  }
+  .suela {
+    height: 400px;
+    display: none;
+  }
+  .gorra {
+    height: 400px;
+    display: none;
+  }
+  .conjunto {
+    height: 400px;
+    display: none;
+  }
+}
