@@ -1,0 +1,22 @@
+header {
+  background-color: rgb(60, 225, 137);
+  padding: 20px;
+}
+header nav ul {
+  width: 100%;
+}
+.navbar {
+  align-items: center;
+  display: flex;
+}
+header nav ul li {
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+}
+header nav ul li a {
+  text-decoration: solid;
+  color: darkblue;
+  font-size: 15px;
+  font-weight: bold;
+}
