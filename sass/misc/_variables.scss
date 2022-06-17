@@ -56,23 +56,30 @@ section#h2 {
   background-color: rgb(179, 230, 203);
   grid-area: h2;
 }
-div#uno {
+.fotos {
   background-color: rgb(179, 230, 203);
+}
+div#uno {
+  // background-color: rgb(179, 230, 203);
+  @extend .fotos;
   grid-area: uno;
 }
 div#dos {
-  background-color: rgb(179, 230, 203);
+  // background-color: rgb(179, 230, 203);
   grid-area: dos;
+  @extend .fotos;
   display: center;
 }
 div#tres {
-  background-color: rgb(179, 230, 203);
+  // background-color: rgb(179, 230, 203);
   grid-area: tres;
+  @extend .fotos;
   animation: fadeIn 5s;
 }
 div#cuatro {
-  background-color: rgb(179, 230, 203);
+  // background-color: rgb(179, 230, 203);
   grid-area: cuatro;
+  @extend .fotos;
   animation: fadeIn 5s;
 }
 
