@@ -20,14 +20,9 @@ section {
   margin-top: 0;
   margin: 0px;
 }
-.suela {
-  height: 400px;
-}
 .fotos {
   width: 100%;
-  display: flex;
   justify-content: space-evenly;
-  animation: fadeIn 5s;
 }
 .adidas {
   width: 250px;
@@ -59,30 +54,22 @@ section#h2 {
 .fotos {
   background-color: rgb(179, 230, 203);
 }
-div#uno {
-  // background-color: rgb(179, 230, 203);
-  @extend .fotos;
-  grid-area: uno;
-}
-div#dos {
-  // background-color: rgb(179, 230, 203);
-  grid-area: dos;
-  @extend .fotos;
-  display: center;
-}
-div#tres {
-  // background-color: rgb(179, 230, 203);
-  grid-area: tres;
-  @extend .fotos;
-  animation: fadeIn 5s;
-}
-div#cuatro {
-  // background-color: rgb(179, 230, 203);
-  grid-area: cuatro;
-  @extend .fotos;
-  animation: fadeIn 5s;
-}
-
-.titulo {
+.titleTemplate {
   color: blue;
+  text-transform: uppercase;
+  text-align: center;
+}
+h1 {
+  @extend .titleTemplate;
+}
+@mixin animation {
+  animation: fadeIn 5s;
+  display: flex;
+}
+.gorra {
+  @include animation;
+}
+.suela {
+  height: 400px;
+  @include animation;
 }

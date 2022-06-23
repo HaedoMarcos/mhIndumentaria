@@ -131,3 +131,7 @@
 .photo {
   width: 150px;
 }
+.producto {
+  @extend .titleTemplate;
+  color: black;
+}
