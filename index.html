@@ -38,7 +38,7 @@
       <nav
         id="navbar"
         class="navbar navbar-expand-lg"
-        style="background-color: #3ce189"
+        style="background-color: rgb(38, 52, 204)"
       >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -64,32 +64,39 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link mb-0 h1" href="./pages/productos.html"
+                <a
+                  class="nav-link mb-0 h1 text-white"
+                  href="./pages/productos.html"
                   >Productos</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/metodos-de-pago.html"
+                <a
+                  class="nav-link text-white"
+                  href="./pages/metodos-de-pago.html"
                   >Metodos de Pago</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/testimonios.html"
+                <a class="nav-link text-white" href="./pages/testimonios.html"
                   >Testimonios</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/devoluciones.html"
+                <a class="nav-link text-white" href="./pages/devoluciones.html"
                   >Devoluciones</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/contactanos.html"
+                <a class="nav-link text-white" href="./pages/contactanos.html"
                   >Contactanos</a
                 >
               </li>
@@ -98,98 +105,121 @@
         </div>
       </nav>
     </header>
-    <main class="grid-area">
+    <main>
       <h1 class="titleTemplate">MH - Indumentaria</h1>
-      <div id="uno" class="fotos">
-        <img
-          class="suela"
-          src="./img/suela-nike-girada.jpg"
-          alt="ropa-deportiva"
-        />
-      </div>
-      <div id="dos" class="fotos">
-        <img
-          class="adidas rounded img-fluid"
-          src="./img/calzado adidas.jpg"
-          alt="calzado-adidas"
-        />
-      </div>
-      <div id="tres" class="fotos">
-        <img
-          class="conjuntinho rounded img-fluid"
-          src="./img/conjuntinho.jpg"
-          alt="indumentaria-deportiva"
-        />
-      </div>
-      <div id="cuatro" class="fotos">
-        <img
-          class="gorra rounded img-fluid"
-          src="./img/new york.jpg"
-          alt="gorra-deportiva"
-        />
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="true"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/calzado-adidas.jpg"
+              class="d-block carousel-image"
+              alt="calzado-adidas"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/conjuntinho.jpg"
+              class="d-block carousel-image"
+              alt="Conjuntos"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/newyork.jpg"
+              class="d-block carousel-image"
+              alt="gorra-deportiva"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </main>
-    <footer class="text-center text-white" style="background-color: #3ce189">
+    <footer
+      class="text-center text-white"
+      style="background-color: rgb(38, 52, 204)"
+    >
       <div class="container p-4">
-        <section class="mb-4">
+        <div class="mb-4">
           <a
             class="btn btn-outline-light btn-floating m-1"
-            href="#!"
+            href="http://facebook.com"
             role="button"
             ><i class="fab fa-facebook-f"></i
           ></a>
 
           <a
             class="btn btn-outline-light btn-floating m-1"
-            href="#!"
+            href="http://twitter.com"
             role="button"
             ><i class="fab fa-twitter"></i
           ></a>
 
           <a
             class="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-google"></i
-          ></a>
-
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
+            href="http://instagram.com"
             role="button"
             ><i class="fab fa-instagram"></i
           ></a>
-
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-github"></i
-          ></a>
-        </section>
-
-        <section class="mb-4">
+        </div>
+      </div>
+      <div>
+        <div class="mb-4">
           <p>
             Como motivo de la apertura de nuestro sitio web oficial estaremos
             realizando grandes sorteos y descuentos para que puedan aprovechar
             al maximo!
           </p>
-        </section>
+        </div>
       </div>
 
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2022 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/"
-          >MHindumentaria.com</a
-        >
+        <a class="text-white" href="https://google.com">MHindumentaria.com</a>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

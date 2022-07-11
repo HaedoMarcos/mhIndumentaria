@@ -2,15 +2,14 @@
   width: 90px;
 }
 
-main {
-  background-color: rgb(179, 230, 203);
-  padding: 20px;
-  height: 78vh;
+.carousel-image {
+  width: 350px;
+  height: 400px;
 }
 h1 {
   margin: 0px 0;
   text-align: center;
-  color: darkblue;
+  color: black;
   font-weight: bolder;
 }
 hr {
@@ -24,38 +23,18 @@ section {
   width: 100%;
   justify-content: space-evenly;
 }
-.adidas {
-  width: 250px;
-  height: 250px;
-  @include animation;
-}
-.conjuntinho {
-  @include animation;
-}
 
-.grid-area {
-  display: grid;
-  grid-template-columns: 4fr 12fr 12fr 12fr;
-  grid-template-rows: 10vh 35vh 20vh 15vh;
-  grid-template-areas:
-    "h1 h1 h1 h1"
-    "uno dos tres cuatro"
-    "uno . . cuatro"
-    "h2 h2 h2 h2";
-}
 h1 {
-  background-color: rgb(179, 230, 203);
-  grid-area: h1;
+  background-color: rgb(188, 219, 255);
 }
 section#h2 {
-  background-color: rgb(179, 230, 203);
-  grid-area: h2;
+  background-color: rgb(188, 219, 255);
 }
 .fotos {
-  background-color: rgb(179, 230, 203);
+  background-color: rgb(188, 219, 255);
 }
 .titleTemplate {
-  color: blue;
+  color: black;
   text-transform: uppercase;
   text-align: center;
 }
@@ -71,5 +50,13 @@ h1 {
 }
 .suela {
   height: 400px;
+  @include animation;
+}
+.adidas {
+  width: 250px;
+  height: 250px;
+  @include animation;
+}
+.conjuntinho {
   @include animation;
 }
